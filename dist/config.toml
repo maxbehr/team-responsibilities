@@ -1,0 +1,50 @@
+# Page title
+title = "Responsibilities in our team"
+
+# Page description
+description = "See the topics our department handles and pick the first person thats available to find a solution for your problem."
+
+# People
+[[people]]
+id = "p1"
+name = "Lester"
+
+[[people]]
+id = "p2"
+name = "Lacey"
+
+[[people]]
+id = "p3"
+name = "Charlotte"
+
+[[people]]
+id = "p4"
+name = "Lisa"
+
+[[people]]
+id = "p5"
+name = "Mary"
+
+[[people]]
+id = "p6"
+name = "Henry"
+
+[[people]]
+id = "p7"
+name = "Marc"
+
+# Responsibilities
+[[responsibilities]]
+name = "Bugs"
+descr = "Did you find any bugs in our main product? Ask here."
+people = ["p3", "p5", "p6", "p7"]
+
+[[responsibilities]]
+name = "Deployment"
+descr = "Ask Lacey and Lester for everything regarding our Deployment pipeline."
+people = ["p2", "p1"]
+
+[[responsibilities]]
+name = "Support"
+descr = "Any questions our wiki doesn't cover?"
+people = "p4"

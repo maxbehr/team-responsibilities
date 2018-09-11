@@ -1,0 +1,25 @@
+{
+  "name": "responsibilities",
+  "version": "1.0.0",
+  "description": "Small tool for visualizing chain of responsibilities in teams",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:js": "mkdir -p dist/js && browserify src/js/*.js > dist/js/bundle.js",
+    "build:css": "mkdir -p dist/css && node-sass --output-style compressed -o dist/css src/scss",
+    "build": "mkdir -p dist && cp -r src/{index.html,config.toml,img} dist && npm run build:css && npm run build:js",
+    "watch": "watch 'npm run build' ./src"
+  },
+  "author": "Max Behr",
+  "license": "MIT",
+  "devDependencies": {
+    "express": "^4.16.3",
+    "node-sass": "^4.9.3",
+    "sass": "^1.13.2",
+    "watch": "^1.0.2"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "toml": "^2.3.3"
+  }
+}
